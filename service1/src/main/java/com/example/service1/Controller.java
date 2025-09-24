@@ -13,7 +13,10 @@ import java.time.Instant;
 @RestController
 public class Controller {
 
+    // Define the path to the vStorage log file
     private static final String VSTORAGE_PATH = "/mnt/vstorage/log.txt";
+
+    // Define RestTemplate for HTTP requests
     private final RestTemplate restTemplate = new RestTemplate();
 
     // Helper functions

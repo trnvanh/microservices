@@ -5,9 +5,12 @@ const axios = require("axios");
 
 const app = express();
 const PORT = 3000;
+
+// Path to vStorage log file and storage service URL
 const VSTORAGE_PATH = "/mnt/vstorage/log.txt";
 const STORAGE_URL = "http://storage:4000/log";
 
+// Helper functions
 function getUptimeHours() {
     return (os.uptime() / 3600).toFixed(2);
 }
@@ -20,6 +23,7 @@ function getFreeDiskMB() {
     return (availableBlocks / 1024).toFixed(2);
 }
 
+// Endpoint to get status
 app.get("/status", async (req, res) => {
     const timestamp = new Date().toISOString();
     const record = `Timestamp2: uptime ${getUptimeHours()} hours, free disk in root: ${getFreeDiskMB()} Mbytes at ${timestamp}`;
