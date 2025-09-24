@@ -1,0 +1,17 @@
+The used LLM tool
+Motivation/reason to use LLM
+How and why LLM helped
+What kind of mistakes LLM did
+What were things that LLM was not able to provide
+
+In this exercise, LLM tool was used for researching to understand the network of 3 services. 
+I did it because I read and understood the assignment, but I am not sure if I understood it 
+right and how to get started. It also helped me with the helper functions to get metrics. 
+Specifically, ChatGPT model GPT-5 was used. I guarantee that I actively did this assignment 
+by writing the code and I actually understood how the network works.
+
+Well at the beginning it didn't explain really well what the recorded log is but only gave me 
+the code of that part. I had to ask follow up questions to get reasonable answer.
+
+I have no idea for the last question, but maybe the version of tools that ChatGPT used in its
+code was outdated?

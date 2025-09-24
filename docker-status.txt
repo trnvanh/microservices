@@ -1,0 +1,14 @@
+docker container ls
+CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS          PORTS                    NAMES
+67b115d5f486   microservices-ex1-service1   "java -jar app.jar -…"   17 seconds ago   Up 16 seconds   0.0.0.0:8199->8199/tcp   microservices-ex1-service1-1
+80247c6a15bf   microservices-ex1-service2   "docker-entrypoint.s…"   17 seconds ago   Up 16 seconds   3000/tcp                 microservices-ex1-service2-1
+d272b13379b5   microservices-ex1-storage    "docker-entrypoint.s…"   17 seconds ago   Up 16 seconds   4000/tcp                 microservices-ex1-storage-1
+
+docker network ls
+NETWORK ID     NAME                        DRIVER    SCOPE
+a78e40e5deaa   bridge                      bridge    local
+4799a77c5e3a   code4fun_backend            bridge    local
+ca8bbe691afa   host                        host      local
+1d276eb626e7   microservices-ex1_default   bridge    local
+62d9fad94f7b   none                        null      local
+5779d39e4298   weatherapp_default          bridge    local
